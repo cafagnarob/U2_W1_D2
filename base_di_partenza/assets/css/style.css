@@ -19,7 +19,11 @@ hr {
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
-  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -28,19 +32,79 @@ header {
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
 }
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media screen and (min-width: 800px) {
   header {
     padding: 1em;
   }
 }
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media screen and (max-width: 1199px) {
   header .brand img {
     margin-bottom: 20px;
   }
 }
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media screen and (min-width: 1200px) {
   header {
     text-align: left;
@@ -136,6 +200,27 @@ blockquote {
 h1 + p {
   color: #a0a0a0;
 }
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 @media screen and (max-width: 499px) {
   p,
@@ -149,7 +234,27 @@ h1 + p {
     font-weight: 700;
   }
 }
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media screen and (min-width: 500px) {
   h1 {
     font-size: 3rem;
@@ -166,13 +271,53 @@ h1 + p {
     font-weight: 700;
   }
 }
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 3.6rem;
   }
 }
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media screen and (min-width: 1200px) {
   body {
     line-height: 2;
@@ -230,11 +375,157 @@ iframe {
 table {
   margin-bottom: 2em;
 }
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media screen and (min-width: 500px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .clearfix {
+    position: relative;
+    z-index: 0;
+  }
+  .underline {
+    position: absolute;
+    top: 5.5%;
+    width: 85%;
+    z-index: 0;
+  }
+  .clearfix h1 {
+    width: 85%;
+    position: relative;
+    z-index: 1;
+  }
+  .diMario {
+    color: #a3a3a3;
+  }
+
+  .imgLeft {
+    float: left;
+  }
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 100;
+  }
+
   table {
-    margin: 0 auto 2em;
+    margin: 0 0 30px 0;
+  }
+
+  section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    padding: 7px 1.5em;
+    position: absolute;
+    top: -16px;
+    text-transform: uppercase;
+  }
+
+  section {
+    padding: 4em 1em;
+  }
+
+  form {
+    width: 58%;
+  }
+  form input,
+  button {
+    height: 30px;
+  }
+  aside div {
+    position: relative;
+  }
+
+  .fa-tag {
+    color: #a7a7a7;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 4em;
+    opacity: 0.3;
+  }
+
+  .torna :nth-of-type(1) {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 30px;
+    /* background-color: white; */
+    padding: 30px;
+  }
+
+  .icon {
+    position: fixed;
+  }
+  .far.fa-plus-square {
+    font-size: 2em;
+    color: blue;
+    border: 2px solid white;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px black;
+    position: fixed;
+    bottom: 7em;
+    right: 10px;
+  }
+
+  .far.fa-calendar-alt {
+    font-size: 2em;
+    color: blue;
+    border: 2px solid white;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px black;
+    position: fixed;
+    bottom: 4em;
+    right: 10px;
+  }
+
+  .far.fa-caret-square-up {
+    font-size: 2em;
+    color: rgb(255, 0, 0);
+    border: 2px solid white;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px black;
+    position: fixed;
+    bottom: 1em;
+    right: 10px;
   }
 }
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media screen and (min-width: 700px) {
   table {
     width: 70%;
@@ -282,12 +573,40 @@ button {
   color: white;
   font-weight: bold;
 }
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media screen and (min-width: 500px) {
   input {
     display: inline-block;
     width: 70%;
   }
 }
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media screen and (min-width: 700px) {
   input {
     padding: 15px;
@@ -329,7 +648,11 @@ aside div p:last-child {
 /* FOOTER */
 footer {
   background: rgb(53, 53, 53);
-  background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
   box-shadow: 0 3px 3px #444;
   color: #f0f0f0;
   padding: 1em;
@@ -337,14 +660,89 @@ footer {
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 800px) {
-  footer {
-    padding: 1em 12em;
-  }
-}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
-footer a {
-  color: fuchsia;
+@media screen and (min-width: 800px) {
+  header {
+    z-index: 0;
+  }
+  main {
+    position: relative;
+    z-index: -1;
+  }
+  footer {
+    padding: 1em 1em;
+  }
+  .underline {
+    position: absolute;
+    top: 7%;
+    width: 73%;
+    z-index: 0;
+  }
+  form input,
+  button {
+    height: 30px;
+    vertical-align: middle;
+    padding: 10px 10px;
+  }
+
+  footer a {
+    color: fuchsia;
+  }
+
+  table {
+    margin: 0 auto 40px auto;
+  }
+
+  .icon {
+    position: fixed;
+    z-index: 2;
+  }
+
+  .far.fa-plus-square {
+    font-size: 2em;
+    color: blue;
+    border: 2px solid white;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px black;
+
+    bottom: auto;
+    top: 100px;
+    right: 10px;
+  }
+
+  .far.fa-calendar-alt {
+    font-size: 2em;
+    color: blue;
+    border: 2px solid white;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px black;
+
+    bottom: auto;
+    top: 180px;
+    right: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -355,8 +753,38 @@ footer a {
     margin-left: auto;
     margin-right: auto;
   }
-}
+  .clearfix h1 {
+    width: 100%;
+  }
+  .underline {
+    width: 47%;
 
+    top: 60px;
+    right: 135px;
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+
+  table {
+    margin: 60px auto 60px auto;
+  }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media print {
   body {
     font-size: 24px;
